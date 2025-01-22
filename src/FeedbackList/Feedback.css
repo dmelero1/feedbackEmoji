@@ -1,0 +1,22 @@
+.feedbackList {
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+    display: flex; 
+    gap: 15px; 
+  }
+  
+  .feedbackList li {
+    display: inline-block; 
+    cursor: pointer; 
+  }
+  
+  .feedbackList li label {
+    font-size: 55px; 
+    transition: transform 0.2s; 
+  }
+  
+  .feedbackList li:hover label {
+    transform: scale(1.5); 
+  }
+  
