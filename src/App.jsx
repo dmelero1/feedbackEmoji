@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import FeedbackList from "./FeedbackList/FeedbackList";
+import SelectedFeedbackDisplay from "./SelectedFeedbackDIsplay/SelectedFeedbackDIsplay";
 
 const initialEmojis = [
   {
@@ -41,6 +42,7 @@ function App() {
           onFeedbackChangeHandler={onFeedbackChangeHandler}
         />
       </div>
+      {feedback && <SelectedFeedbackDisplay feedback={feedback} />}
     </div>
   );
 }
