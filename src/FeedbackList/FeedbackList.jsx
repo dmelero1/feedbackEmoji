@@ -6,7 +6,10 @@ function FeedbackList({ emojis, onFeedbackChangeHandler }) {
     <ul className="feedbackList">
       {emojis.map((emoji) => (
         <li key={emoji.id}>
-          <button onClick={() => onFeedbackChangeHandler(emoji)}>
+          <button onClick={() => onFeedbackChangeHandler(emoji)}
+            title={emoji.text} 
+            className="feedbackButton"
+          >
             {emoji.emoji}
           </button>
         </li>
