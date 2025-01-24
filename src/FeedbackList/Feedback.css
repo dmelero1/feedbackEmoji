@@ -1,22 +1,29 @@
 .feedbackList {
-    list-style-type: none; 
-    padding: 0; 
-    margin: 0; 
-    display: flex; 
-    gap: 15px; 
-  }
-  
-  .feedbackList li {
-    display: inline-block; 
-    cursor: pointer; 
-  }
-  
-  .feedbackList li label {
-    font-size: 55px; 
-    transition: transform 0.2s; 
-  }
-  
-  .feedbackList li:hover label {
-    transform: scale(1.5); 
-  }
-  
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0;
+  gap: 25px;
+}
+
+.feedbackList li {
+  display: inline-block;
+}
+
+.feedbackButton {
+  border: 2px solid #ddd;
+  border-radius: 15px;
+  padding: 10px 15px;
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.feedbackButton:hover {
+  background-color: #cad9e7;
+  border-color: #007bff;
+}
+
+.feedbackButton:active {
+  background-color: #007bff;
+}
